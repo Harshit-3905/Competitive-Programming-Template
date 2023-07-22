@@ -2,9 +2,11 @@ import java.util.*;
 import java.io.*;
 
 public class Solution {
+    static int mod = 1000000007;
+
     public static void main(String[] args) throws java.lang.Exception {
         FastReader in = new FastReader();
-        int testcase = 1;
+        int testcase = in.nextInt();
         while (testcase-- > 0) {
             int n = in.nextInt();
 
