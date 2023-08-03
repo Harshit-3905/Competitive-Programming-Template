@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Solution {
+public class Solution2 {
     static int mod = 1000000007;
 
     public static void main(String[] args) throws java.lang.Exception {
@@ -95,4 +95,16 @@ class FastReader {
         return str;
     }
 
+}
+
+class Trip {
+    int x;
+    int y;
+    int z;
+
+    Trip(int a, int b, int c) {
+        x = a;
+        y = b;
+        z = c;
+    }
 }
