@@ -8,6 +8,7 @@ public class Solution1 {
         FastReader in = new FastReader();
         int testcase = in.nextInt();
         while (testcase-- > 0) {
+            int n = in.nextInt();
 
         }
     }
