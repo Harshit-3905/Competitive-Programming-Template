@@ -13,6 +13,22 @@ public class Solution1 {
         }
     }
 
+    public static long sqrt(long x) {
+        long l = 0;
+        long h = (long) (3e9);
+        long ans = 0;
+        while (l <= h) {
+            long mid = l + (h - l) / 2;
+            if (mid * mid <= x) {
+                ans = mid;
+                l = mid + 1;
+            } else {
+                h = mid - 1;
+            }
+        }
+        return ans;
+    }
+
     // For Integer Array
     public static void safeSort(int[] a) {
         shuffle(a);
@@ -98,13 +114,11 @@ class FastReader {
 }
 
 class Trip {
-    int x;
+    long x;
     int y;
-    int z;
 
-    Trip(int a, int b, int c) {
+    Trip(long a, int b) {
         x = a;
         y = b;
-        z = c;
     }
 }
