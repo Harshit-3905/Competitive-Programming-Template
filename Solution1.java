@@ -113,11 +113,11 @@ class FastReader {
 
 }
 
-class Trip {
-    long x;
+class Pair {
+    int x;
     int y;
 
-    Trip(long a, int b) {
+    Pair(int a, int b) {
         x = a;
         y = b;
     }
