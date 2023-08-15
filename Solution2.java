@@ -13,23 +13,6 @@ public class Solution2 {
         }
     }
 
-    static Trip dfs(List<List<Integer>> list, int x, String s) {
-        Trip ans = new Trip(0, 0, 0);
-        if (s.charAt(x - 1) == 'B')
-            ans.x += 1;
-        else
-            ans.y += 1;
-        for (int y : list.get(x)) {
-            Trip c = dfs(list, y, s);
-            ans.x += c.x;
-            ans.y += c.y;
-            ans.z += c.z;
-        }
-        if (ans.x == ans.y)
-            ans.z += 1;
-        return ans;
-    }
-
     // For Integer Array
     public static void safeSort(int[] a) {
         shuffle(a);
