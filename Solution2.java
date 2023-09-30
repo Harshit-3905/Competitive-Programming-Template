@@ -6,8 +6,8 @@ public class Solution2 {
 
     public static void main(String[] args) throws java.lang.Exception {
         FastReader in = new FastReader();
-        int testcase = in.nextInt();
-        while (testcase-- > 0) {
+        int testcases = in.nextInt();
+        while (testcases-- > 0) {
             int n = in.nextInt();
 
         }
